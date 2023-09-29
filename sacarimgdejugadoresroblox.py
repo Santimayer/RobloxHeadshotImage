@@ -14,7 +14,7 @@ def on_button_click():
     if img.status_code == 200:
         #puedes cambiar 'img/{rblxname}.png' por la ruta en donde quieres que se guarde y el nombre
         
-        with open(f'img/{rblxname}.png', 'wb') as f:
+        with open(f'{rblxname}.png', 'wb') as f:
             f.write(img.content)
         print(f'Guardado como: {rblxname}.png')
 #ventana de tkinter
